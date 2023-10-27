@@ -1,4 +1,4 @@
-package TimeFormatter;
+package timeFormatter;
 
 import java.time.Duration;
 import java.util.ArrayList;
