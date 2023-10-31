@@ -13,7 +13,7 @@ public class RomanNumerals {
         countToRoman("MC", 1100);
         countToRoman("M", 1000);
         countToRoman("CM", 900);
-        countToRoman("DC", 510);
+        countToRoman("DC", 600);
         countToRoman("D", 500);
         countToRoman("CD", 400);
         countToRoman("CX", 110);
@@ -41,7 +41,7 @@ public class RomanNumerals {
             return;
         }
         if (romanNumber.equals("DC")) {
-            if (number % value == 0 && number / value == 1) {
+            if (number % value < 100 && number / value == 1) {
                 romanNumeral.append(romanNumber.repeat(Math.max(0, number / value)));
                 number = number % value;
             }
